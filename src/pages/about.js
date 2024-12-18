@@ -21,7 +21,7 @@ export default function About() {
     if (loading) return <Loading/>;
 
     const pageData = data.aboutPage[0]
-    const {title, biography, proPic, proPicDark, total_client, total_project, experience} = pageData;
+    const {title, biography, proPic, proPicDark, total_project, experience} = pageData;
 
     return (
     <>
@@ -37,7 +37,7 @@ export default function About() {
                     <div className='col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='font-medium'>
-                        Hi, I'm
+                        Hi, I&apos;m
                         <span className='font-bold text-primary dark:text-primaryDark text-base'>&nbsp;Md Ziaul Hoque Zitu,&nbsp;</span>
                         {biography[0]}
                         </p>

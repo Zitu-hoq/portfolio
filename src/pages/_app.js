@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Zitu Hoque's Portfolio</title>
+        <title>Zitu Hoque&apos;s Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>

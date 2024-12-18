@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/logo.png" />
       </Head>
       
-      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+      <main className={`${montserrat.variable} font-mont text-dark dark:text-light bg-light dark:bg-dark w-full min-h-screen`}>
         <NavBar/>
         <AnimatePresence mode="wait">
           <DataProvider>

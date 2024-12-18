@@ -17,7 +17,7 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     const fetchAllCollections = async () => {
       try {
-        const databaseId = process.env.DATABASE; // Replace with your database ID
+        const databaseId = process.env.ALL_DATABASE; // Replace with your database ID
 
         // Replace these collection IDs with your actual collection IDs
         const collectionIds = {

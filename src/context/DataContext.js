@@ -21,7 +21,7 @@ export const DataProvider = ({ children }) => {
 
         // Replace these collection IDs with your actual collection IDs
         const collectionIds = {
-          home_pageData: process.env.HOME,
+          home_pageData: process.env.HOME_DATA,
           aboutPage: process.env.ABOUT,
           app_skill: process.env.APP_SKILL,
           cyber_skill: process.env.CYBER_SKILL,

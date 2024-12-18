@@ -17,16 +17,14 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     const fetchAllCollections = async () => {
       try {
-        const databaseId = process.env.ALL_DATABASE; // Replace with your database ID
-
-        // Replace these collection IDs with your actual collection IDs
+        const databaseId = process.env.NEXT_PUBLIC_DATABASE; 
         const collectionIds = {
-          home_pageData: process.env.HOME_DATA,
-          aboutPage: process.env.ABOUT,
-          app_skill: process.env.APP_SKILL,
-          cyber_skill: process.env.CYBER_SKILL,
-          certificationData: process.env.CERTIFICATION,
-          projects: process.env.PROJECT,
+          home_pageData: process.env.NEXT_PUBLIC_HOME_DATA,
+          aboutPage: process.env.NEXT_PUBLIC_ABOUT,
+          app_skill: process.env.NEXT_PUBLIC_APP_SKILL,
+          cyber_skill: process.env.NEXT_PUBLIC_CYBER_SKILL,
+          certificationData: process.env.NEXT_PUBLIC_CERTIFICATION,
+          projects: process.env.NEXT_PUBLIC_PROJECT,
         };
 
         const responses = await Promise.all(

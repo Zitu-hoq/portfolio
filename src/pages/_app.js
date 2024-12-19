@@ -24,11 +24,11 @@ export default function MyApp({ Component, pageProps }) {
       
       <main className={`${montserrat.variable} font-mont text-dark dark:text-light bg-light dark:bg-dark w-full min-h-screen`}>
         <NavBar/>
-        <AnimatePresence mode="wait">
-          <DataProvider>
+        <DataProvider>
+          <AnimatePresence mode="wait">
             <Component key={router.asPath} {...pageProps} />
-          </DataProvider>
-        </AnimatePresence>
+            </AnimatePresence>
+        </DataProvider>
         <Footer/>
       </main>
     </>

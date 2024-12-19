@@ -11,7 +11,7 @@ const PopUpProject = ({onClose, project}) => {
   
     return (
     <>
-        <div className="top-0 bottom-0 left-0 right-0 fixed flex bg-gray-900 bg-opacity-50 justify-center items-center py-4 z-100 duration-300 opacity-1">
+        <div className="top-0 bottom-0 left-0 right-0 fixed flex bg-gray-900 bg-opacity-50 justify-center items-center py-4 z-10 duration-300 opacity-1">
         <motion.div 
         initial={{ opacity: 0, scale: 0.3 }} 
         animate={{ opacity: 1, scale: 1 }} 

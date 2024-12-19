@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Loading = () => {
   return (
-    <div className="top-0 bottom-0 left-0 right-0 fixed flex flex-col justify-center items-center h-full w-full bg-light dark:bg-dark z-100">
+    <div className="top-0 bottom-0 left-0 right-0 fixed flex flex-col justify-center items-center h-full w-full bg-light dark:bg-dark z-50">
      
       <motion.div
         className="w-12 h-12 mb-4 border-4 border-green-500 border-t-transparent rounded-full"

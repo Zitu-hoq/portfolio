@@ -27,27 +27,27 @@ export default function Home() {
       </Head>
       <TransitionEffect/>
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <Layout className='pt-0'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='w-1/2 pb-32'>
-              <Image src={heroPic} layout='responsive' width={85} height={85} alt="Profile Picture"/>
+        <Layout className='pt-0 md:pt-16 sm:pt-8'>
+          <div className='flex items-center justify-between w-full lg:flex-col'>
+            <div className='w-1/2 pb-32 md:w-full md:pb-0'>
+              <Image src={heroPic} layout='responsive' className='lg:hidden md:inline-block md:w-full' width={85} height={85} alt="Profile Picture"/>
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <AnimatedText text={heroTitle} className="!text-5xl !text-left"/>
-              <p className='my-4 text-base font-medium'>
+            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+              <AnimatedText text={heroTitle} className="!text-5xl !text-left lg:!text-center md:!text-4xl sm:!text-3xl"/>
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
               {heroText}
               </p>
-              <div className='flex items-center self-start mt-2'>
-                <Link href={resume} target={"_blank"} className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light hover:dark:border-light'>
+              <div className='flex items-center self-start mt-2 lg:self-center'>
+                <Link href={resume} target={"_blank"} className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'>
                   Resume <LinkArrow className={"w-6 ml-1"}/>
                 </Link>
-                <Link href="/contact" className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'>Contact</Link>
+                <Link href="/contact" className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'>Contact</Link>
               </div>
             </div>
           </div>
         </Layout>
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24'>
+        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
           <Image src="/light_bulb.svg" alt="just a picture" width={0} height={0} className='w-full h-auto'/>
         </div>
       </main>

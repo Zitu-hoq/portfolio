@@ -42,7 +42,7 @@ const Projects = () => {
 
   return (
     <div>
-        <div className='flex text-black text-lg justify-center items-center gap-x-3 mb-8 dark:text-light' >
+        <div className='flex text-black text-lg justify-center items-center gap-x-3 mb-8 dark:text-light xs:text-base' >
         {catagory.map((buttonName) => (
             <button
             key={buttonName}

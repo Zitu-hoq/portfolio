@@ -8,11 +8,11 @@ import { Pro_Skill } from './ProjectData';
 const ProgressBar=({title, progress})=>{
   return(
     <>
-      <div className="flex w-full justify-between mb-1 sm:mb-0.5">
+      <div className="flex w-full justify-between mb-1 sm:mb-0.5 xs:w-[90%]">
         <span className="text-base uppercase font-medium text-dark dark:text-light sm:text-sm xs:text-xs">{title}</span>
         <span className="text-base font-medium text-dark dark:text-light sm:text-sm xs:text-xs">{progress}%</span>
     </div>
-    <div className="w-full bg-gray-200 rounded-full h-2.5 mb-6 dark:bg-gray-700 sm:h-2 xs:h-1.5 md:mb-4 xs:mb-2">
+    <div className="w-full bg-gray-200 rounded-full h-2.5 mb-6 dark:bg-gray-700 sm:h-2 xs:h-1.5 md:mb-4 xs:mb-2 xs:w-[90%]">
         <motion.div
           className="bg-primary h-2.5 rounded-full dark:bg-primaryDark sm:h-2 xs:h-1.5"
           initial={{width: 0}}

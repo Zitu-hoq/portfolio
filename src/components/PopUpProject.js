@@ -19,7 +19,7 @@ const PopUpProject = ({onClose, project}) => {
             duration: 0.5, 
             ease: "easeInOut", 
         }}
-        className='bg-[#ffe0e0] w-[65%] h-[60%] rounded-lg p-10 relative flex flex-col justify-center items-center dark:bg-[#282424] lg:w-[80%] lg:h-[65%] sm:h-[70%]'>
+        className='bg-[#ffe0e0] w-[65%] h-[60%] rounded-lg p-10 relative flex flex-col justify-center items-center dark:bg-[#282424] lg:w-[80%] lg:h-[65%] xs:p-4 xs:h-[55%] xs:w-[90%]'>
             <div className="grid grid-cols-2 items-center justify-center gap-x-12 lg:gap-x-6 md:grid-cols-1">
                 <button onClick={onClose} className='absolute top-6 right-6 text-2xl text-primary dark:text-primaryDark cursor-pointer md:top-3 md:right-3'><CrossIcon className="h-5 w-5 md:h-4 md:w-4"/></button>
                 <div className='flex items-center justify-center md:mb-1'>
@@ -31,9 +31,9 @@ const PopUpProject = ({onClose, project}) => {
                         <h3 className='text-lg font-semibold mb-2 sm:text-base'>{name}</h3>
                         <p className='text-sm mb-3 lg:mb-2 sm:text-xs'>{summary}</p>
                         
-                        <p className='mb-4 text-xs font-medium text-primary dark:text-primaryDark'>
+                        <p className='mb-4 text-xs font-medium text-primary dark:text-primaryDark xs:flex xs:flex-wrap'>
                             {technologies.map(technology => (
-                            <span key={technology} className='font-sm uppercase rounded-sm tracking-wide bg-dark/20 dark:bg-light/20 p-1 mr-1 lg:p-0 md:p-1 sm:p-0'>{technology}</span>
+                            <span key={technology} className='font-sm uppercase rounded-sm tracking-wide bg-dark/20 dark:bg-light/20 p-1 mr-1 lg:p-0 md:p-1 sm:p-0 xs:mb-1'>{technology}</span>
                             ))}  
                         </p>
 

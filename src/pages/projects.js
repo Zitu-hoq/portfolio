@@ -62,8 +62,8 @@ const Projects = () => {
             {filteredProjects.map(project=>(
                 <div key={project.id} className='bg-[#e2d6d6] p-6 rounded-lg dark:bg-[#322f2f] lg:p-4'>
                 <Image src={project.img} alt="demo" height={500} width={500} className='rounded-lg mb-4 h-[75%] w-[100%] lg:mb-2' />
-                <h3 className='mb-2 text-lg font-semibold lg:mb-1 md:text-base sm:text-sm'>{project.name}</h3>
-                <button onClick={()=>handleClick(project)} className='flex w-25 text-primary text-sm font-semibold items-center gap-x-1 cursor-pointer hover:translate-x-1 dark:text-primaryDark sm:text-xs'> Project Details <ArrowIcon className="h-4 w-4 text-primary dark:text-primaryDark md:h-3 md:w-3"/> </button>
+                <h3 className='mb-2 text-lg font-semibold lg:mb-1 md:text-base sm:text-sm xs:text-center'>{project.name}</h3>
+                <button onClick={()=>handleClick(project)} className='flex w-25 text-primary text-sm font-semibold items-center gap-x-1 cursor-pointer hover:translate-x-1 dark:text-primaryDark sm:text-xs xs:text-right xs:m-auto'> Project Details <ArrowIcon className="h-4 w-4 text-primary dark:text-primaryDark md:h-3 md:w-3"/> </button>
                 
             </div>
             

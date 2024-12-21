@@ -11,7 +11,7 @@ const Details = ({type, time, place, info}) => {
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration: 0.5, type:"spring"}} >
                 <h3 className='capitalize font-bold text-2xl md:text-xl'>{type}</h3>
                 <span className='font-medium capitalize text-dark/75 dark:text-light/75'>{time} | {place}</span>
-                <p className='font-medium w-full'>{info}</p>
+                <p className='font-medium w-full xs:font-light'>{info}</p>
             </motion.div>
         </li>
     )

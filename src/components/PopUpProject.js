@@ -22,8 +22,8 @@ const PopUpProject = ({onClose, project}) => {
         className='bg-[#ffe0e0] w-[65%] h-[60%] rounded-lg p-10 relative flex flex-col justify-center items-center dark:bg-[#282424] lg:w-[80%] lg:h-[65%] xs:p-4 xs:h-[55%] xs:w-[90%]'>
             <div className="grid grid-cols-2 items-center justify-center gap-x-12 lg:gap-x-6 md:grid-cols-1">
                 <button onClick={onClose} className='absolute top-6 right-6 text-2xl text-primary dark:text-primaryDark cursor-pointer md:top-3 md:right-3'><CrossIcon className="h-5 w-5 md:h-4 md:w-4"/></button>
-                <div className='flex items-center justify-center md:mb-1'>
-                    <Image src={img} layout='responsive' width={50} height={70} alt='project image' className='rounded-lg'/>
+                <div className='flex items-center justify-center !overflow-hidden md:mb-1'>
+                    <Image src={img} layout='responsive' width={50} height={50} alt='project image'  className='rounded-lg object-cover'/>
                 </div>
                 <div className='justify-center'>
                     <div className='text-sm'>{type}</div>
@@ -33,7 +33,7 @@ const PopUpProject = ({onClose, project}) => {
                         
                         <p className='mb-4 text-xs font-medium text-primary dark:text-primaryDark xs:flex xs:flex-wrap'>
                             {technologies.map(technology => (
-                            <span key={technology} className='font-sm uppercase rounded-sm tracking-wide bg-dark/20 dark:bg-light/20 p-1 mr-1 lg:p-0 md:p-1 sm:p-0 xs:mb-1'>{technology}</span>
+                            <span key={technology} className='uppercase rounded-sm tracking-wide bg-dark/20 dark:bg-light/20 p-1 mr-1 lg:p-0 md:p-1 sm:p-0 xs:mb-1'>{technology}</span>
                             ))}  
                         </p>
 

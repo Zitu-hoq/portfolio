@@ -59,7 +59,7 @@ const Projects = () => {
         tranition={{duration:3, ease: easeInOut}}
         className='grid grid-cols-3 gap-[1.8rem] text-dark justify-center pt-4 dark:text-light md:grid-cols-2 xs:grid-cols-1'>
         
-            {filteredProjects.map(project=>(
+            {filteredProjects.slice().reverse().map(project=>(
                 <div key={project.id} className='bg-[#e2d6d6] p-6 rounded-lg dark:bg-[#322f2f] lg:p-4'>
                 <Image src={project.img} alt="demo" height={500} width={500} className='rounded-lg mb-4 h-[75%] w-[100%] lg:mb-2' />
                 <h3 className='mb-2 text-lg font-semibold lg:mb-1 md:text-base sm:text-sm xs:text-center'>{project.name}</h3>

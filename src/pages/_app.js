@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import { GoogleTagManager } from '@next/third-parties/google'
 import { AnimatePresence } from 'framer-motion'
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
@@ -20,6 +21,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Zitu Hoque&apos;s Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
+        <GoogleTagManager gtmId="G-XVQ6SQX3VQ" />
       </Head>
       
       <main className={`${montserrat.variable} font-mont text-dark dark:text-light bg-light dark:bg-dark w-full min-h-screen`}>

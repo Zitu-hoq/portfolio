@@ -56,7 +56,7 @@ const Projects = () => {
         <motion.div key={filterKey} 
         initial={{opacity: 0, y:-30}}
         animate={{opacity:1, y:0}}
-        tranition={{duration:3, ease: easeInOut}}
+        transition={{duration:3, ease: easeInOut}}
         className='grid grid-cols-3 gap-[1.8rem] text-dark justify-center pt-4 dark:text-light md:grid-cols-2 xs:grid-cols-1'>
         
             {filteredProjects.slice().reverse().map(project=>(
